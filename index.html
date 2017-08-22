@@ -1,5 +1,97 @@
+<!DOCTYPE html>
 <html>
-<body>
-	hello world!
-</body>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>webTest</title>
+    <link rel="Shortcut Icon" href="favicon.ico" >
+    <link rel="Bookmark" href="favicon.ico" >
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' />
+    <!--[if !IE]><!-->
+    <script src=/jquery/3.2.1/jquery.min.js></script>
+    <!--<![endif]-->
+    <!--[if lt IE 8]>
+    <script src=/jquery/1.9.1/jquery.min.js></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <script src=/jquery/3.2.1/jquery.min.js></script>
+    <![endif]-->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src='/javascripts/base.js'></script>
+  </head>
+  <body>
+    <div class='panel panel-primary'>
+      <div class="panel-heading">
+        <h3 class="panel-title">欢迎使用崩溃查询系统！</h3>
+      </div>
+    <div class="panel-body">
+        <div class='panel-body'>
+          <div class="btn-group pull-right">
+            <button id='search-caption' type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+              崩溃类别
+            </button>
+            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul id='search' class="dropdown-menu" role="menu">
+                <li>
+                  <a data-id='3'>全部崩溃</a>
+                </li>
+                <li>
+                  <a data-id='0'>Java崩溃</a>
+                </li>
+                <li>
+                  <a data-id='1'>JNI崩溃</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <hr/>
+        <div class='panel panel-primary pull-left' style='width:16%'>
+          <div class='panel-heading'>
+            <h3 class='panel-title'>崩溃项</h3>
+          </div>
+          <div class='panel-body'>
+            <table id='crash-info' class="table table-hover auto-hiden">
+              <thead>
+                <tr>
+                  <th class="th-type">类别</th>
+                  <th class="th-date">崩溃日期</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='panel pull-right'>
+            <ul class="pagination">
+              <li id='page-first' class='disabled'><a href="#">&laquo;</a></li>
+              <li id='page-prev' class='disabled'><a href='#'>&lt;</a></li>
+              <li id='page-index' data-index='0' data-count='0' class='disabled'><a>0/0</a></li>
+              <li id='page-next' class='disabled'><a href='#'>&gt;</a></li>
+              <li id='page-last' class='disabled'><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='panel panel-primary pull-right' style='width:82%'>
+          <div class='panel-heading'>
+            <h3 class='panel-title'>崩溃详细信息</h3>
+          </div>
+          <div class='panel-body'>
+            <table id='crash-detail' class='table table-hover'>
+              <thead>
+                <tr>
+                  <th>属性</th>
+                  <th>值</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <!-- <button id='btn-delete' type="button" class="btn btn-danger btn-lg btn-block btn-sm">删除</button> -->
+        </div>
+    </div>
+    </div>
+  </body>
 </html>

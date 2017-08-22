@@ -1,0 +1,168 @@
+body {
+	background: url('/images/5-120601095934.jpg');
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div#left_menu {
+	float: left;
+	background: #CCCCCC;
+	left: 2px;
+	width: 20%;
+	min-height: 100%;
+	height: auto;
+	font-family:'微软雅黑';
+
+	/*cannot select*/
+	/*-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;*/
+}
+
+div#left_body {
+	min-height: 1px;
+}
+
+div.left-item {
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #E0E0E0;
+}
+
+div.left-item:hover {
+	height: 18px;
+	line-height: 18px;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color:#F0F0F0;
+	background: #EEEEEE;
+}
+
+div.top_menu {
+	left: 2px;
+	right: 2px;
+	height: 40px;
+	line-height: 40px;
+	font-family: '微软雅黑';
+
+	background: #AAAACC;
+	color: #FFFFFF;
+	text-align: center;
+
+	/*border-radius: 20px;*/
+}
+
+div.tool-row {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+input.radio {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+label.right-radio {
+	float:right;
+	height: 30px;
+	line-height: 30px;
+}
+
+label#page-index {
+	float:right;
+	color: #FF6666;
+	height: 20px;
+	line-height: 20px;
+}
+
+label.right {
+	float: right;
+	text-align: center;
+	color: #22FF22;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+}
+
+label.right:hover {
+	float: right;
+	text-align: center;
+	color: #2222FF;
+	cursor: hand;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+}
+
+label.right:active {
+	float: right;
+	text-align: center;
+	color: #00FF00;
+	cursor: hand;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+}
+
+label.right-none {
+	float: right;
+	text-align: center;
+	color: #666666;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+}
+
+div.mid_menu {
+	width:78%;
+	right: 2px;
+	height: 100%;
+	cursor: hand;
+	background: #CCCCCC;
+	float:right;
+}
+
+div#mid_body {
+	background: #CCCCCC;
+}
+
+div.mid_item {
+	background: #CFCFCF;
+	height: 20px;
+	line-height: 20px;
+}
+
+div.mid_item_title {
+	top:2px;
+	background: #EEEEFF;
+	height: 20px;
+	line-height: 20px;
+}
+
+div#mid_item_stack {
+	min-height: 20px;
+	height: 100%;
+}
+
+table.auto-hiden {
+	table-layout: fixed;
+}
+td.auto-hiden {
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+th.th-type {
+	width:22%;
+}
+
+th.th-data {
+	width:56%;
+}
